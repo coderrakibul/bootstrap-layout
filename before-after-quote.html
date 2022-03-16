@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beofre After and Quote</title>
+    <style>
+        blockquote::before{
+            content: open-quote;
+            color:red;
+            font-size:20px;
+        }
+        blockquote::after{
+            content:close-quote;
+            color:red;
+            font-size: 20px;
+        }
+        .welcome-world{
+            display: inline-block;
+        }
+        .welcome-world::after, .welcome-world::before{
+            content:'';
+            background-color:lightcoral;
+            width:100%;
+            height:3px;
+            display:block;
+        }
+        .welcome-bd{
+            display:inline-block;
+        }
+        .welcome-bd::before, .welcome-bd:hover::after{
+            content:'';
+            display:block;
+            background-color: red;
+            height:3px;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <h2> Special Quote</h2>
+    <blockquote>If you born poor it's not your mistake but if you die poor it's your mistake</blockquote>
+    <blockquote>Man is everywhere in chain</blockquote>
+
+
+    <h2> Use of some before after
+    </h2>
+    <p class="welcome-world">Hello World</p>
+    <p class="welcome-bd">Hello Bangladesh</p>
+</body>
+</html>
